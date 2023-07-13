@@ -1,0 +1,190 @@
+body {
+    color: #777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: absolute;
+}
+section {
+    position: relative;
+}
+.banner-area {
+    background: url("https://preview.colorlib.com/theme/bitcoin/img/header-bg.jpg.webp") right;
+    background-size: cover;
+    position: relative;
+}
+.banner-area .overlay-bg {
+    background-color: rgba(18, 21, 31, 0.85);
+}
+.banner-area-row {
+    display: flex;
+    height: 789px;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.banner-content {
+    text-align: center !important;
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.banner-content h5 {
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white !important;
+    text-transform: uppercase !important;
+    font-size: 16px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+.banner-content h1 {
+    color: #fff !important;
+    line-height: 1.2rem !important;
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.banner-content p {
+    color: white !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.banner-area .primary-btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    background-color: #f78f3d !important;
+    border: 1px solid transparent;
+    color: #fff;
+    line-height: 42px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase !important;
+    text-decoration: none;
+    outline: 0;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+}
+.convert-area {
+    height: 503px;
+    position: relative;
+    margin-top: -105px;
+    z-index: 2;
+}
+.convert-area .convert-wrap {
+    background: linear-gradient(to right, #f3c400, #f88845);
+    padding: 100px 0;
+}
+.convert-area .convert-wrap-items__png {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+.convert-wrap {
+    padding-bottom: 30px;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.convert-wrap__text h1 {
+    text-align: center;
+    color: white !important;
+    font-size:36px;
+}
+.convert-wrap__text p {
+    text-align: center;
+    color: white !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.convert-wrap-items {
+    align-items: flex-start !important;
+    justify-content: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.convert-wrap-items__png {
+    margin-bottom: 30px;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.convert-wrap-items__input {
+    flex: 0 0 30%;
+    max-width: 30%;
+    position: relative;
+    width: 400px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.convert-wrap-items__input .form-control {
+    color: #fff !important;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 0;
+    background: transparent;
+    border-color: #f9c065;
+    margin-bottom: 20px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    color: white !important;
+}
+input {
+    overflow: visible;
+    font-family: inherit;
+}
+.convert-wrap .primary-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #fff;
+    color: #222;
+    float: right;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    line-height: 37px;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase !important;
+    text-decoration: none;
+    outline: 0;
+}
