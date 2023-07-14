@@ -10,6 +10,10 @@
     transition: all 0.5s;
     z-index: 997;
 }
+#header.header-scrolled {
+    background: rgba(34, 34, 34, 0.9);
+    transition: all 0.5s;
+}
 #header #logo img {
     padding: 0;
     margin: 0;

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Linearicons-Free';
+    src:url('../fonts/Linearicons-Free.eot?w118d');
+    src:url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+    url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+    url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+    url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+    url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+.owl-carousel {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.owl-carousel .owl-loaded {
+    display: block;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.about-area .owl-controls {
+    position: absolute;
+    right: -90%;
+    top: 45%;
+}
+.owl-carousel .owl-nav .owl-prev .owl-next {
+    cursor: pointer;
+    user-select: none;
+}
+.about-area .lnr-arrow-up,
+.about-area .lnr-arrow-down {
+    padding: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    display: inline-flex;
+}
+.about-area .lnr-arrow-up {
+    border-bottom: 1px solid #fff;
+}
+.lnr {
+    font-family: 'Linearicons-Free', sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.lnr-arrow-up:before {
+    content: "\e877";
+}
+.lnr-arrow-down:before {
+    content: "\e878";
+}
+.no-padding {
+    padding: 0  ;
+}
+.about-area-right {
+    padding-left: 4%;
+    padding-right: 10%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.about-area-right h1 {
+    color: #fff;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    font-size: 36px;
+}
+.about-area-right p {
+    color: #777
+}
