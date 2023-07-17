@@ -13,7 +13,6 @@
     box-sizing: border-box;
 }
 .owl-carousel {
-    display: block;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -28,23 +27,25 @@
 .owl-carousel .owl-stage {
     position: relative;
 }
+
 .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
     float: left;
 }
-.owl-carousel .owl-item img {
-    display: block;
-    width: 100%;
-}
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+
 .about-area .owl-controls {
     position: absolute;
-    right: -90%;
-    top: 45%;
+    right: 50%;
+    top: 70% !important;
+}
+@media (max-width: 800px) {
+    .about-area .owl-controls {
+        position: relative;
+        text-align: center;
+        left: 0;
+        top: 20px;
+    }
 }
 .owl-carousel .owl-nav .owl-prev .owl-next {
     cursor: pointer;
@@ -90,7 +91,9 @@
     padding-bottom: 30px;
     padding-top: 40px;
     font-size: 36px;
+    text-align: center;
 }
 .about-area-right p {
-    color: #777
+    color: #777;
+    text-align: center !important;
 }

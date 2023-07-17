@@ -1,18 +1,151 @@
-@import "reset.css";
-@import "header.css";
-@import "content.css";
-@import "owl-carousel.css";
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 ::selection {
     background-color: #f78f3d;
     color: #fff
 }
 body {
-    color: #777;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
-    position: absolute;
+    position: relative;
+    color: #777777
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+@media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+select {
+    display: block
+}
+.col-sm-6,.col-md-3,.col-md-4,.col-md-6,.col-md-8,.col-md-9,.col-md-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex:0 0 50%;
+        max-width: 50%
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex:0 0 25%;
+        max-width: 25%
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%
+    }
+
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        flex:0 0 16.66667%;
+        max-width: 16.66667%
+    }
+
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+
+    .col-lg-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%
+    }
+
+        .col-lg-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+
+    .col-lg-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%
+    }
+
+    .col-lg-9 {
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+    .col-lg-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%
+    }
+
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
 }
 img {
     vertical-align: middle;
@@ -58,4 +191,76 @@ input, button, select, textarea {
 button {
     text-transform: none;
     overflow: visible;
+}
+.primary-btn {
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.header-btn {
+    background-color: #f78f3d;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.mx-auto {
+    margin-left: auto !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.no-js .owl-carousel {
+    display: block;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+.text-center {
+    text-align: center;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }

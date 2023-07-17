@@ -2,20 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>bitcoin</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/owl-carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 </head>
-<body>
-<header id="header">
-        <div class="container" id="header-container">
-            <div class="logo">
+<body class>
+<button type="button" id="mobile-nav-toggle">
+    <i class="lnr lnr-menu">
+    </i>
+</button>
+<header id="header" class>
+        <div class="container">
+            <div class="header-row row">
+            <div id="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
             </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
+            <div id="nav-menu">
+                <ul class="nav-list" style="touch-action: pan-y">
                     <li class="menu-active">
                         <a href="#home">Home</a>
                     </li>
@@ -31,25 +41,26 @@
                     <li>
                         <a href="#blog">Blog</a>
                     </li>
-                    <li class="menu-with-children">
-                        <a href>Pages</a>
+                    <li>
+                        <a href="">Pages</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+            </div>
         </div>
     </header>
 <section class="banner-area" id="home">
     <div class="overlay overlay-bg"></div>
     <div class="container">
-        <div class="banner-area-row">
-            <div class="banner-content">
+        <div class="banner-area-row fullscreen row" style="height: 789px;">
+            <div class="banner-content  col-lg-12 col-md-12">
                 <h5>Currently Purchase Rate</h5>
                 <h1> $30,359 </h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
                     or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
                 </p>
-                <a href="#" class="primary-btn">Buy Bitcoin</a>
+                <a href="#" class="primary-btn header-btn" style="text-transform: uppercase">Buy Bitcoin</a>
             </div>
         </div>
     </div>
@@ -57,22 +68,22 @@
 <section class="convert-area" id="convert">
     <div class="container">
         <div class="convert-wrap">
-            <div class="convert-wrap__text">
+            <div class="convert-wrap__text row">
                 <h1>The Currency Converter</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
             </div>
-            <div class="convert-wrap-items">
-                <div class="convert-wrap-items__png">
-                    <img src="img/bitcoin.png" alt="bitcoin">
+            <div class="convert-wrap-items row">
+                <div class="convert-wrap-items__png col-lg-2 cols-img">
+                    <img class="mx-auto" style="display: block !important;" src="img/bitcoin.png" alt="bitcoin">
                 </div>
-                <div class="convert-wrap-items__input">
-                    <input type="text" name="feet" placeholder="Feet" class="form-control">
-                    <input type="text" name="pounds" placeholder="Pounds" class="form-control">
+                <div class="col-lg-3 cols">
+                    <input type="text" name="feet" placeholder="Feet" class="form-control mb-20">
+                    <input type="text" name="pounds" placeholder="Pounds" class="form-control mb-20">
                 </div>
-                <div class="convert-wrap-items__input">
-                    <input type="text" name="feet" placeholder="Inches" class="form-control">
-                    <input type="text" name="pounds" placeholder="Pounds" class="form-control">
-                    <a href="#" class="primary-btn">Calculate Your BMI</a>
+                <div class="col-lg-3 cols">
+                    <input type="text" name="feet" placeholder="Inches" class="form-control mb-20">
+                    <input type="text" name="pounds" placeholder="Pounds" class="form-control mb-20">
+                    <a href="#" class="primary-btn header-btn mb-20" style="text-transform: uppercase">Calculate Your BMI</a>
                 </div>
             </div>
         </div>
@@ -81,21 +92,21 @@
 <section class="simple-services-area">
     <div class="container">
         <div class="row">
-            <div class="single-service">
+            <div class="col-lg-4 single-service">
                 <img src="img/s1.png" alt="">
                 <a href="#">
                     <h4>Get Paid through Bitcoin</h4>
                 </a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
             </div>
-            <div class="single-service">
+            <div class="col-lg-4 single-service">
                 <img src="img/s2.png" alt="">
                 <a href="#">
                     <h4>Bitcoin Exchange Analysis</h4>
                 </a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
             </div>
-            <div class="single-service">
+            <div class="col-lg-4 single-service">
                 <img src="img/s3.png" alt="">
                 <a href="#">
                     <h4>Send & Recieive Bitcoin</h4>
@@ -107,45 +118,17 @@
 </section>
 <section class="about-area">
     <div class="container-fluid">
-        <div class="about-area-row">
-            <div class="about-area-left no-padding">
+        <div class="row about-area-row">
+            <div class="col-lg-6 about-area-left no-padding">
                 <div class="active-about-carousel owl-carousel owl-theme owl-loaded">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item active" style="width: 720px; margin-right: 100px;">
-                                <img class="img-fluid" src="img/about-img.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-controls">
-                        <div class="owl-nav">
-                            <div class="owl-prev">
-                                <span class="lnr lnr-arrow-up">
-                                </span>
-                            </div>
-                            <div class="owl-next">
-                                <span class="lnr lnr-arrow-down"></span>
-                            </div>
-                        </div>
-                        <div class="owl-dots">
-                            <div class="owl-dot active"></div>
-                            <div class="owl-dot">
-                                <span></span>
-                            </div>
-                            <div class="owl-dot">
-                                <span></span>
-                            </div>
-                            <div class="owl-dot">
-                                <span></span>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-area-right no-padding">
-                <h1>Exchange Bitcoin <br>
-                    is not that tough <br>
-                    Anymore</h1>
+            <div class="col-lg-6 about-area-right no-padding">
+                <h1>Exchange Bitcoin
+                    is not that <br>
+                    tough Anymore</h1>
                 <p>inappropriate behavior is often laughed off as “boys will be boys, women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the jobs beyond reproach. Lorem ipsum dolor sit amet, consectetur adipicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </div>
@@ -154,13 +137,13 @@
 <section class="service-area" id="feature">
     <div class="container">
         <div class="service-header row">
-            <div class="service-header__text">
+            <div class="col-md-9 pb-40 service-header__text">
                 <h1>Why choose us during purchase bitcoin</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
             </div>
         </div>
-        <div class="service-area-content row">
-            <div class="service-area-content__col">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-user"></span>
@@ -171,7 +154,7 @@
                         technology and power.</p>
                 </div>
             </div>
-            <div class="service-area-content__col">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-license"></span>
@@ -183,7 +166,7 @@
                     </p>
                 </div>
             </div>
-            <div class="service-area-content__col">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-phone"></span>
@@ -193,8 +176,8 @@
                         common due to rapid advancement of
                         technology and power.</p>
                 </div>
-                </div>
-            <div class="service-area-content__col">
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-rocket"></span>
@@ -205,7 +188,7 @@
                         technology and power.</p>
                 </div>
             </div>
-            <div class="service-area-content__col">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-diamond"></span>
@@ -215,8 +198,8 @@
                         common due to rapid advancement of
                         technology and power.</p>
                 </div>
-                </div>
-            <div class="service-area-content__col">
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="service-single-row">
                     <h4>
                         <span class="lnr lnr-bubble"></span>
@@ -226,26 +209,26 @@
                         common due to rapid advancement of
                         technology and power.</p>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 </section>
 <section class="stat-area">
     <div class="container">
         <div class="stat-area-row row">
-            <div class="stat-left">
+            <div class="col-lg-6 stat-left">
                 <img class="img-fluid" src="img/chart.png" alt="">
             </div>
-            <div class="stat-right">
+            <div class="col-lg-6 stat-right">
                 <h1>
                     Ups and Downs
                     <br>
                     of Bitcoin (Realtime)
                 </h1>
-                <p>
+                <p class="pt-20 pb-20">
                     inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that.
                 </p>
-                    <a href="#" class="stat-btn primary-btn">View Details</a>
+                <a href="#" class="stat-btn primary-btn header-btn" style="text-transform: uppercase">View Details</a>
 
             </div>
         </div>
@@ -254,7 +237,7 @@
 <section class="call-action">
     <div class="container">
         <div class="call-action-row row">
-            <div class="call-action-items">
+            <div class="col-lg-9">
                 <h1>Huge Transaction in Last Week</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -266,17 +249,17 @@
 </section>
 <section class="price-area" id="price">
     <div class="container">
-        <div class="price-area-header row">
-            <div class="menu-content">
-                <div class="text-center">
-                    <h1 class="price-area-header__text">Purchase Whatever You Want
+        <div class="price-area-container row">
+            <div class="menu-content pb-60 col-lg-8">
+                <div class="price-area-text">
+                    <h1 class="mb-10">Purchase Whatever You Want
                     </h1>
                     <p>Who are in extremely love with eco friendly system.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="price-area-item">
+            <div class="col-lg-4">
                 <div class="single-price no-padding">
                     <div class="price-top">
                         <h4>01 Ripple</h4>
@@ -293,7 +276,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price-area-item">
+            <div class="col-lg-4">
                 <div class="single-price no-padding">
                     <div class="price-top">
                         <h4>01 Ethereum</h4>
@@ -310,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price-area-item">
+            <div class="col-lg-4">
                 <div class="single-price no-padding">
                     <div class="price-top">
                         <h4>01 Bitcoin</h4>
@@ -333,7 +316,7 @@
 <section class="blog-area" id="blog">
     <div class="container">
         <div class="blog-header row">
-            <div class="menu-content">
+            <div class="menu-content pb-60 col-lg-8">
                 <div class="text-center">
                     <h1>Latest Posts from our Blog</h1>
                     <p>Who are in extremely love with eco friendly system.</p>
@@ -341,7 +324,7 @@
             </div>
         </div>
         <div class="blog-content row">
-            <div class="single-blog">
+            <div class="single-blog col-lg-4">
                 <div class="thumb">
                     <img class="img-fluid" src="img/b1.jpg" alt="">
                 </div>
@@ -361,7 +344,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-blog">
+            <div class="single-blog col-lg-4">
                 <div class="thumb">
                     <img class="img-fluid" src="img/b2.jpg" alt="">
                 </div>
@@ -381,7 +364,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-blog">
+            <div class="single-blog col-lg-4">
                 <div class="thumb">
                     <img class="img-fluid" src="img/b3.jpg" alt="">
                 </div>
@@ -407,13 +390,13 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer-item">
+            <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h4>About Us</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua</p>
                 </div>
             </div>
-            <div class="footer-item">
+            <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h4>Top Products</h4>
                     <ul class="footer-menu">
@@ -432,21 +415,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-input">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h4>Newsletter</h4>
                     <p>You can trust us. we only send offers, not a single spam.</p>
-                <div class="footer-form">
-                    <form class="navbar-form" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get">
-                        <div class="input-group add-on">
-                            <input class="form-control" name="EMAIL" placeholder="Email addres" onfocus="this.placeholder = 'Email addres'" required type="email">
-                            <div class="input-group-btn">
-                                <button class="genric-btn">
-                                    <span class="lnr lnr-arrow-right"></span>
-                                </button>
+                    <div class="footer-form">
+                        <form class="navbar-form" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get">
+                            <div class="input-group add-on">
+                                <input class="form-control" name="EMAIL" placeholder="Email addres" onfocus="this.placeholder = 'Email addres'" required type="email">
+                                <div class="input-group-btn">
+                                    <button class="genric-btn">
+                                        <span class="lnr lnr-arrow-right"></span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -471,5 +454,29 @@
         </div>
     </div>
 </footer>
+<script src="js/main.js"></script>
+<nav id="mobile-nav">
+    <ul class style="touch-action: pan-y">
+        <li class="menu-active">
+            <a href="#home"></a>
+        </li>
+        <li>
+            <a href="#convert">Convert</a>
+        </li>
+        <li>
+            <a href="#feature">Feature</a>
+        </li>
+        <li>
+            <a href="#price">Price</a>
+        </li>
+        <li>
+            <a href="#blog">Blog</a>
+        </li>
+        <li>
+            <a href="">Pages</a>
+        </li>
+    </ul>
+</nav>
+<div id="mobile-body-overlay" style="display: none;"></div>
 </body>
 </html>
