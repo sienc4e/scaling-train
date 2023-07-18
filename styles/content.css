@@ -8,10 +8,6 @@
     font-weight: normal;
     font-style: normal
 }
-section {
-    position: relative;
-}
-
 .banner-area {
     background: url("https://preview.colorlib.com/theme/bitcoin/img/header-bg.jpg.webp") right;
     background-size: cover;
@@ -190,6 +186,7 @@ outline: 0;
 .about-area {
     background-color: #222222;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .container-fluid {

@@ -126,7 +126,6 @@ select {
             max-width: 50%;
         }
 
-
     .col-lg-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
@@ -176,6 +175,9 @@ h4 {
 h6 {
     color: #222;
     font-size: 14px;
+}
+section {
+    position: relative;
 }
 ol, ul {
     margin: 0;
